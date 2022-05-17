@@ -1,4 +1,5 @@
 import s from "../styles/Navbar.module.scss"
+import Link from "next/link";
 
 const Navbar = () => {
     return <div className={s.nav}>
@@ -7,9 +8,9 @@ const Navbar = () => {
               logo
           </div>
            <div className={s.links}>
-               <a>Home</a>
-               <a>Posts</a>
-               <a>Contacts</a>
+               <Link href={"/"}><a>Home</a></Link>
+               <Link href={"/posts"}><a>Posts</a></Link>
+               <Link href={"/contacts"}><a>Contacts</a></Link>
            </div>
        </nav>
     </div>
