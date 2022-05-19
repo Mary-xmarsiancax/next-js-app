@@ -2,8 +2,9 @@ import Heading from "../components/Heading";
 import {useRouter} from "next/router";
 import {useEffect} from "react";
 import Head from 'next/head'
+import {FC} from "react"
 
-const Error = () => {
+const Error:FC = () => {
     const router = useRouter()
     useEffect(()=>{
         setTimeout(()=>{router.push('/')},
