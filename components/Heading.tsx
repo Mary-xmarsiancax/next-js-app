@@ -1,14 +1,13 @@
-import {FC} from "react"
+import {FC, ReactNode} from "react"
 
 type HeadingProps = {
-    tag?: string,
     text: string
 }
 
-const Heading: FC<HeadingProps> = ({tag, text}) => {
-    const Tag:string = tag || "h1"
+const Heading: FC<HeadingProps> = ({ text}) => {
+
     return <>
-        <Tag>{text}</Tag>
+        <h1>{text}</h1>
     </>
 }
 export default Heading

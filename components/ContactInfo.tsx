@@ -10,7 +10,7 @@ const ContactInfo: FC<ContactInfoProps> = ({contact}) => {
     const {street, suite, city, zipcode} = address || {}
     if (!contact) {
         return (
-            <Heading tag="h3" text="Empty contact"/>
+            <Heading  text="Empty contact"/>
         )
     }
     return <>
