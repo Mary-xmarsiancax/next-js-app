@@ -1,6 +1,13 @@
 import Head from 'next/head'
 import s from "../styles/Social.module.scss"
-const Socials = ({socials}) => {
+import {SocialType} from "../types";
+import {FC} from "react"
+
+type SocialProps = {
+    socials: Array<SocialType>
+}
+
+const Socials:FC<SocialProps> = ({socials}) => {
     if (!socials) {
         return null
     }

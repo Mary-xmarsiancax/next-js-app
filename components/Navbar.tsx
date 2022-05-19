@@ -3,12 +3,14 @@ import Link from "next/link";
 import Image from "next/Image";
 import {useRouter} from "next/router";
 import logo from "../public/logo.png"
+import {FC} from "react"
+
 const navigation = [
     {id: 1, title: "Home", path: "/"},
     {id: 2, title: "Posts", path: "/posts"},
     {id: 3, title: "Contacts", path: "/contacts"},
 ]
-const Navbar = () => {
+const Navbar:FC = () => {
     const {pathname} = useRouter();
     return <div className={s.nav}>
         <nav className={s.nav}>
