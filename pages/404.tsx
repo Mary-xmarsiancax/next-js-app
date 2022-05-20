@@ -16,7 +16,7 @@ const Error:FC = () => {
             <title>Error</title>
         </Head>
         <Heading text="404"/>
-        <Heading tag="h2" text="Something is going wrong..."/>
+        <Heading text="Something is going wrong..."/>
     </>
 }
 export default Error
