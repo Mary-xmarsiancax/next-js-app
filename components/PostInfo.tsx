@@ -11,7 +11,7 @@ const ContactInfo:FC<PostInfoProps> = ({post}) => {
 
     if (!post) {
         return (
-            <Heading tag="h3" text="Empty post"/>
+            <Heading text="Empty post"/>
         )
     }
     return <>
