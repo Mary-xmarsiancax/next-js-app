@@ -3,7 +3,7 @@ import {FC} from "react"
 
 const Footer:FC = () => {
     return <footer>
-        <Heading text="Footer"/>
+        <Heading text="made with love"/>
     </footer>
 }
 export default Footer
